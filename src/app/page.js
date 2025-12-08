@@ -1,11 +1,13 @@
 import React from 'react'
-import { RoomCard } from '../modules/rooms'
+// import Navbar from '../shared/container/navbarDesktop'
+import MobileMenu from '../shared/container/navbarMobile'
 
 const page = () => {
   return (
     <div className='text-3xl font-bold text-center'>
-      <RoomCard />
-    </div>
+      {/* <Navbar/> */}
+    <MobileMenu ></MobileMenu>
+      </div>
   )
 }
 
