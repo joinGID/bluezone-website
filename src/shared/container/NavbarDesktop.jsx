@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { MapPin, Phone } from "lucide-react";
 
-export default function Navbar() {
+export default function NavbarDesktop() {
   const navItems = ["About", "Rooms", "Services", "Events", "Blog", "Contact"];
 
   return (

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
 import MobileMenu from "../components/navbarmobile/MobileMenu";
 
-export default function Navbar() {
+export default function NavbarMobile() {
   const [open, setOpen] = useState(false);
 
   return (
