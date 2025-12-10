@@ -19,7 +19,7 @@ const Vision = () => {
       ref={containerRef}
       className="relative h-[400vh] bg-white text-black"
     >
-      <main className="h-full">
+      <main className="h-full ">
         {visionCards.map((card, i) => {
           // ithu aa video style logic
           const targetScale = 1 - (visionCards.length - (i + 1)) * 0.05;
