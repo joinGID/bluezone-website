@@ -4,8 +4,8 @@
 // import { Menu } from "lucide-react";
 // // import MobileMenuCom from "../components/navbarmobile/MobileMenu";
 
-// export default function MobileNavbar() {
-//   const [open, setOpen] = useState(false);
+export default function NavbarMobile() {
+  const [open, setOpen] = useState(false);
 
 //   return (
 //     <>
