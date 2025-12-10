@@ -1,6 +1,6 @@
 "use client";
 
-import ServiceHeading from "../components/service/ServiceHeading";
+import ServiceHeading from "../components/ServiceHeading";
 
 const Service = () => {
   return <ServiceHeading />;

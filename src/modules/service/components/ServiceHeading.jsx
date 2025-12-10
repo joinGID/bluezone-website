@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import OutlineButton from "../../../../shared/components/OutlineButton";
-import { serviceHeadingContent } from "../../constants/serviceHeadingConstants";
+import OutlineButton from "../../../shared/components/OutlineButton";
+import { serviceHeadingContent } from "../constants/serviceHeadingConstants";
 
 const ServiceHeading = () => {
   const { eyebrow, title, description, buttonLabel } = serviceHeadingContent;
