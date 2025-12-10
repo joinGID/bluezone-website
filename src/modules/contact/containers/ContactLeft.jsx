@@ -15,7 +15,6 @@ const ContactLeft = () => {
       className="bg-[#faf6f1] px-4 py-16 sm:py-20"
     >
       <div className=" p-12 mx-auto">
-        
         {/*remove centering & make content start from left */}
         <ContactInfo details={contactDetails} />
 
