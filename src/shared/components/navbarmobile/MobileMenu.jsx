@@ -2,7 +2,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 
-export default function MobileMenu({ isOpen, onClose }) {
+export default function MobileMenuCom({ isOpen, onClose }) {
   const navItems = ["About", "Rooms", "Services", "Events", "Blog", "Contact"];
 
   return (

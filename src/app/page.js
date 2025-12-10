@@ -1,14 +1,26 @@
 import React from 'react'
+import Vision from '../modules/abouts/contaner/Vision'
+import ContactSection from '../modules/contact/containers/GetInTouch'
+import ContactLeft from '../modules/contact/containers/ContactLeft'
+// import OutlineButton from '../shared/components/OutlineButton'
+import Service from '../modules/service/container/Service'
+import Gallery from '../modules/gallery/containers/Gallery'
+
 // import Navbar from '../shared/container/navbarDesktop'
-import NavbarDesktop from '../shared/container/NavbarDesktop'
-import NavbarMobile from '../shared/container/NavbarMobile'
+// import MobileMenu from '../shared/container/navbarMobile'
 
 const page = () => {
   return (
     <div className='text-3xl font-bold text-center'>
       {/* <Navbar/> */}
-{/* <NavbarDesktop /> */}
-<NavbarMobile />
+    {/* <MobileMenu></MobileMenu> */}
+    <ContactSection/>
+    <Service/>
+    <Vision/> 
+    <ContactLeft/>  
+    {/* <OutlineButton label="Get In Touch"/> */}
+
+    <Gallery/>
       </div>
   )
 }
