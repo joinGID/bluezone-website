@@ -1,6 +1,6 @@
 import React from "react";
 import { galleryImage } from "../constants/homeConstants";
-import Carousle from "@/src/shared/components/carousle/Carousle ";
+import Carousle from "@/src/shared/components/carousel/Carousle ";
 import OutlineButton from "@/src/shared/components/OutlineButton ";
 
 function PhotoGallery() {

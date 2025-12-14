@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { sliderImages } from "../constants/roomConstants";
-import Carousle from "@/src/shared/components/carousle/Carousle ";
+import Carousle from "@/src/shared/components/carousel/Carousle ";
 
 
 function RoomCarousle() {
