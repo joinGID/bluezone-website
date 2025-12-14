@@ -53,22 +53,22 @@ export default function LandingVideo() {
             <div className="absolute bottom-6 right-6 flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto">
 
                 {/* Mute / Unmute */}
-                <button
+                {/* <button
                     onClick={toggleMute}
                     className="p-3 bg-black/40 backdrop-blur-md border border-white/20 text-white rounded-full hover:bg-black/60 transition-all duration-300"
                     aria-label={muted ? "Unmute" : "Mute"}
                 >
                     {muted ? <VolumeX size={20} /> : <Volume2 size={20} />}
-                </button>
+                </button> */}
 
                 {/* Fullscreen */}
-                <button
+                {/* <button
                     onClick={openFullScreen}
                     className="p-3 bg-black/40 backdrop-blur-md border border-white/20 text-white rounded-full hover:bg-black/60 transition-all duration-300"
                     aria-label="Fullscreen"
                 >
                     <Maximize size={20} />
-                </button>
+                </button> */}
             </div>
 
         </div>

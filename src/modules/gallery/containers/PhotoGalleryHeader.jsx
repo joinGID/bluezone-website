@@ -2,8 +2,10 @@ import React from "react";
 import { galleryImage } from "../../home/constants/homeConstants";
 import Carousle from "@/src/shared/components/carousle/Carousle ";
 import OutlineButton from "@/src/shared/components/OutlineButton ";
+import { useRouter } from "next/navigation";
 
 function PhotoGalleryHeader() {
+    const router = useRouter();
   return (
     <div className="bg-[#f9f6f3] md:py-20 py-10">
       <div className="mx-auto max-w-7xl px-4 md:px-12 py-10 flex flex-col md:flex-row md:items-end justify-between gap-10">
@@ -23,6 +25,7 @@ function PhotoGalleryHeader() {
           <OutlineButton
             label="Explore All Images"
             className="hover:bg-[#153f41]!"
+            onClick={() => router.push("/gallery")}
           />
         </div>
       </div>

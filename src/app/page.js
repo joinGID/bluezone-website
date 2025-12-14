@@ -17,6 +17,9 @@ import NavbarMobile from '../shared/container/NavbarMobile'
 import LandingVideo from '../modules/home/container/LandingVIdeo'
 import ServiceHeading from '../modules/service/container/ServiceHeading'
 import { motion } from 'framer-motion'
+import Footer from '../shared/container/Footer';
+import Story from '../modules/about/component/Story';
+import AboutCarousel from '../modules/about/container/AboutCarousel';
 
 const page = () => {
   
@@ -32,6 +35,9 @@ const page = () => {
     <PhotoGallery />
 <ServiceHeading/>
     <ServiceVision />
+    <AboutCarousel />
+    <Story/>
+    <Footer/>
 
       </div>
   )

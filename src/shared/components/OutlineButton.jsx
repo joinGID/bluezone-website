@@ -1,6 +1,6 @@
 "use client";
 
-const OutlineButton = ({ label, className = "", ...props }) => {
+const OutlineButton = ({ label, className = "",onClick, ...props }) => {
   //label : is button name
   //className : is button class name means style
   //props : is button props
@@ -16,6 +16,7 @@ const OutlineButton = ({ label, className = "", ...props }) => {
                   text-[#263840]
                   hover:bg-black hover:text-white
                   ${className}`}
+      onClick={onClick}
     >
       {label}
     </button>
