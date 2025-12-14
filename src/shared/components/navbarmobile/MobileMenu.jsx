@@ -33,9 +33,9 @@ export default function MobileMenuCom({ isOpen, onClose }) {
             transition={{ duration: 0.6 }}
             className="text-3xl text-[#1f3740] tracking-widest font-semibold text-center"
           >
-            MARIVEN
+            Blue zone
             <p className="text-xs tracking-[0.35em] font-light mt-1">
-              HOTELS & RESORTS
+              Homes & Living
             </p>
           </motion.h1>
 
@@ -47,14 +47,14 @@ export default function MobileMenuCom({ isOpen, onClose }) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.1 * i }}
-                whileHover={{
-                  x: 10,
-                  scale: 1.1,
-                  letterSpacing: "0.2em",
-                  transition: { type: "spring", stiffness: 200, damping: 12 },
-                }}
+                // whileHover={{
+                //   x: 10,
+                //   scale: 1.1,
+                //   letterSpacing: "0.2em",
+                //   transition: { type: "spring", stiffness: 200, damping: 12 },
+                // }}
                 whileTap={{ scale: 0.9 }}
-                className="text-2xl text-[#1f3740] font-light cursor-pointer hover:opacity-70"
+                className="text-2xl text-[#1f3740] font-light cursor-pointer "
               >
                 {item}
               </motion.li>

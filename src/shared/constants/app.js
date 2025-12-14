@@ -2,7 +2,7 @@
  * Global Application Constants
  */
 
-export const APP_NAME = 'Blue Zone';
+export const APP_NAME = 'Blue zone';
 
 export const APP_VERSION = '1.0.0';
 

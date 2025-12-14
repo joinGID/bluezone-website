@@ -1,7 +1,7 @@
 // abouts/constants/contactDetails.jsx
 
 export const contactDetails = {
-  hotelName: "Mariven Hotels & Resorts",
+  hotelName: "Blue zone Homes & Living",
   addressLabel: "Location",
   address: "21400 Pacific Sunset Blvd, Malibu, CA 90265",
   phoneLabel: "Phone",
@@ -19,15 +19,15 @@ export const contactDetails = {
   emails: [
     {
       label: "General Info",
-      address: "hello@marivencoastal.com",
+      address: "hello@Blue zonecoastal.com",
     },
     {
       label: "Bookings",
-      address: "stay@marivencoastal.com",
+      address: "stay@Blue zonecoastal.com",
     },
     {
       label: "Events",
-      address: "events@marivencoastal.com",
+      address: "events@Blue zonecoastal.com",
     },
   ],
 };

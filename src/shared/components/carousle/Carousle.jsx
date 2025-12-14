@@ -10,10 +10,11 @@ import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-function Carousle({images}) {
+function Carousle({ images }) {
   return (
-        <div className="">
+    <div className="">
       <Swiper
         className="relative group"
         modules={[Navigation, Pagination, A11y, Mousewheel]}
@@ -69,10 +70,10 @@ function Carousle({images}) {
           </SwiperSlide>
         ))}
         <div className="top-[50%] button-prev-slide  absolute z-10 group-hover:left-3 -left-[23rem] duration-500 text-white w-[40px] h-[40px] rounded-full bg-black/30 grid place-items-center">
-          <HiOutlineArrowNarrowLeft />
+          <IoIosArrowBack />
         </div>
         <div className="top-[50%] button-next-slide absolute z-10 group-hover:right-3 -right-[23rem] duration-500 text-white w-[40px] h-[40px] rounded-full bg-black/30 grid place-items-center">
-          <HiOutlineArrowNarrowRight />
+          <IoIosArrowForward />
         </div>
       </Swiper>
     </div>
