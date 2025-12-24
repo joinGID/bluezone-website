@@ -1,67 +1,158 @@
 "use client";
 
-import { GalleryImages } from "../constants/GalleryImages.jsx";
+import { useState, useMemo } from "react";
+import { GalleryByType } from "../constants/GalleryImages";
+import OutlineButton from "@/src/shared/components/OutlineButton ";
 
-
+const FILTERS = [
+  { key: "all", label: "All" },
+  { key: "interior", label: "Interior" },
+  { key: "exterior", label: "Exterior" },
+  { key: "architecture", label: "Architecture" },
+];
 
 export default function GalleryGrid() {
+  const [activeFilter, setActiveFilter] = useState("all");
+
+  const imagesToShow = useMemo(() => {
+    if (activeFilter === "all") {
+      return Object.values(GalleryByType).flat();
+    }
+    return GalleryByType[activeFilter] ?? [];
+  }, [activeFilter]);
+
   return (
-    <section className="h-[150vh] w-full bg-white flex  justify-center  sm:px-8 lg:px-16 py-10">
+   
+<section className="h-[170vh] bg-[#F6F6F8] flex justify-center sm:px-8 lg:px-16 py-10">
       <div className="w-full max-w-8xl">
 
-        <div className="grid gap-6 md:grid-cols-3 auto-rows-[220px] md:auto-rows-[260px]">
+        {/* Filter Buttons */}
+        <div className="mb-6 flex flex-wrap gap-3">
+          {FILTERS.map((f) => {
+            const active = f.key === activeFilter;
+            return (
+             <OutlineButton
+  key={f.key}
+  onClick={() => setActiveFilter(f.key)}
+  className={
+    active
+      ? "!bg-black !text-white !border-black !hover:bg-black !hover:text-white"
+      : ""
+  }
+  label={f.label}
+/>
 
-          {/* LEFT */}
-          <div className="space-y-6">
-            <div className="relative overflow-hidden  aspect-[4/3]">
-              <img src={GalleryImages.whiteVilla} className="h-full w-full object-cover" />
-            </div>
-
-            <div className="relative overflow-hidden  aspect-[4/5]">
-              <img src={GalleryImages.minimalHouse} className="h-full w-full object-cover" />
-            </div>
-
-             <div className="relative overflow-hidden  aspect-[16/9]">
-              <img src={GalleryImages.cityNightscape} className="h-full w-full object-cover" />
-            </div>
-          </div>
-
-          {/* CENTER */}
-          <div className="space-y-6">
-            <div className="relative overflow-hidden  aspect-[9/16]">
-              <img src={GalleryImages.stairsTower} className="h-full w-full object-cover" />
-            </div>
-
-            <div className="relative overflow-hidden  aspect-[3.6/3]">
-              <img src={GalleryImages.grayFacade} className="h-full w-full object-cover" />
-            </div>
-          </div>
-
-          {/* RIGHT */}
-          <div className="space-y-6">
-
-            {/* Top */}
-            <div className="relative overflow-hidden  aspect-[16/9]">
-              <img src={GalleryImages.modernCourtyard} className="h-full w-full object-cover" />
-
-            </div>
-
-            <div className="relative overflow-hidden   aspect-[4/3]">
-              <img src={GalleryImages.cityNightscape} className="h-full w-full object-cover" />
-            </div>
-
-            {/* Bottom */}
-            <div className="relative overflow-hidden  aspect-[8/10]">
-              <img src={GalleryImages.luxuryBathroom} className="h-full w-full object-cover" />
-            </div>
-          </div>
-
+            );
+          })}
         </div>
 
-        <div className="mt-6 flex justify-end">
-          <div className="inline-flex items-center gap-2 rounded-full bg-black text-white text-xs px-3 py-1">
-            <span className="inline-block h-2 w-2 rounded-full bg-white" />
-            <span>Made in Framer</span>
+        {/* 3-column Grid (same layout as your first version) */}
+        <div className="grid gap-6 md:grid-cols-3 auto-rows-[240px]">
+
+          {/* LEFT COLUMN */}
+          <div className="space-y-6">
+            {imagesToShow[0] && (
+              <div className="relative overflow-hidden aspect-[4/3] rounded-xl bg-gray-200">
+                {/* absolute image to ensure full-cover and fallback bg visible only if needed */}
+                <img
+                  src={imagesToShow[0].url}
+                  alt={imagesToShow[0].name ?? "img-0"}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                  draggable="false"
+                />
+              </div>
+            )}
+
+            {imagesToShow[1] && (
+              <div className="relative overflow-hidden aspect-[4/5] rounded-xl bg-gray-200">
+                <img
+                  src={imagesToShow[1].url}
+                  alt={imagesToShow[1].name ?? "img-1"}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                  draggable="false"
+                />
+              </div>
+            )}
+
+            {imagesToShow[2] && (
+              <div className="relative overflow-hidden aspect-[16/9] rounded-xl bg-gray-200">
+                <img
+                  src={imagesToShow[2].url}
+                  alt={imagesToShow[2].name ?? "img-2"}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                  draggable="false"
+                />
+              </div>
+            )}
+          </div>
+
+          {/* CENTER COLUMN */}
+          <div className="space-y-6">
+            {imagesToShow[3] && (
+              <div className="relative overflow-hidden aspect-[9/16] rounded-xl bg-gray-200">
+                <img
+                  src={imagesToShow[3].url}
+                  alt={imagesToShow[3].name ?? "img-3"}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                  draggable="false"
+                />
+              </div>
+            )}
+
+            {imagesToShow[4] && (
+              <div className="relative overflow-hidden aspect-[4/3] rounded-xl bg-gray-200">
+                <img
+                  src={imagesToShow[4].url}
+                  alt={imagesToShow[4].name ?? "img-4"}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                  draggable="false"
+                />
+              </div>
+            )}
+          </div>
+
+          {/* RIGHT COLUMN */}
+          <div className="space-y-6">
+            {imagesToShow[5] && (
+              <div className="relative overflow-hidden aspect-[16/9] rounded-xl bg-gray-200">
+                <img
+                  src={imagesToShow[5].url}
+                  alt={imagesToShow[5].name ?? "img-5"}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                  draggable="false"
+                />
+              </div>
+            )}
+
+            {imagesToShow[6] && (
+              <div className="relative overflow-hidden aspect-[4/3] rounded-xl bg-gray-200">
+                <img
+                  src={imagesToShow[6].url}
+                  alt={imagesToShow[6].name ?? "img-6"}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                  draggable="false"
+                />
+              </div>
+            )}
+
+            {imagesToShow[7] && (
+              <div className="relative overflow-hidden aspect-[8/10] rounded-xl bg-gray-200">
+                <img
+                  src={imagesToShow[7].url}
+                  alt={imagesToShow[7].name ?? "img-7"}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                  draggable="false"
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>

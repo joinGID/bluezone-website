@@ -12,12 +12,12 @@ const ServiceVision = () => {
     target: containerRef,
     offset: ["start start", "end end"],
   });
-
+  const height = visionCards?.length * 100 + "vh" || "400vh";
   return (
     <section
       id="vision"
       ref={containerRef}
-      className="relative h-[400vh] bg-[#faf6f1] w-full text-black"
+      className={`relative h-[${height}] bg-[#faf6f1] w-full text-black`}
     >
       <main className="h-full ">
         {visionCards.map((card, i) => {

@@ -1,10 +1,9 @@
 // home/constants/serviceHeadingConstants.jsx
 
 export const serviceHeadingContent = {
-  eyebrow: "Services & Amenities",
-  title: "Experience Paradise",
+  eyebrow: "Blue Zone Living",
+  title: "Homes Designed to Heal",
   description:
-    "Indulge in coastal luxury with our carefully curated experiences and premier facilities designed to elevate your stay from ordinary to extraordinary.",
-  buttonLabel: "Explore All Services",
+    "Every element at Blue Zone Habitat is intentionally crafted to enhance wellbeing, longevity, and balance—where nature, technology, and community come together to create a healthier way of life.",
+  buttonLabel: "Explore the Vision",
 };
-

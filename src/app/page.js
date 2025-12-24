@@ -20,7 +20,7 @@ import { motion } from 'framer-motion'
 import Footer from '../shared/container/Footer';
 import Story from '../modules/about/component/Story';
 import AboutCarousel from '../modules/about/container/AboutCarousel';
-
+import ContentContainer from '../modules/about/container/ContentContainer';
 const page = () => {
   
 
@@ -31,6 +31,7 @@ const page = () => {
     <NavbarMobile/>
     <LandingVideo/>
     <WelcomeHome />
+    <ContentContainer/>
     {/* <HeadLine /> */}
     <PhotoGallery />
 <ServiceHeading/>
