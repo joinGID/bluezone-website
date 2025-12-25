@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-montserrat);
+  --font-serif: var(--font-playfair);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #faf6f1;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+
+.swiper-pagination-bullet {
+  background: #ffffff !important;
+  opacity: 0.4 !important;
+}
+
+/* Active bullet */
+.swiper-pagination-bullet-active {
+  background: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Dynamic bullets (the small “...” style dots) */
+.swiper-pagination-bullet-active-main,
+.swiper-pagination-bullet-active-prev,
+.swiper-pagination-bullet-active-next {
+  background: #ffffff !important;
+}
+
+
+.underline-slide {
+  @apply relative inline-block pb-0.5 text-gray-900 border-b border-gray-300 after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition after:duration-300 hover:after:scale-x-100 focus:after:scale-x-100;
+}
