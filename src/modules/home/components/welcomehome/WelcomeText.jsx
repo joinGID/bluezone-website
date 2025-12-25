@@ -64,7 +64,7 @@ function WelcomeText() {
 
       {/* Signature */}
       <Image
-        src="/signature.png"
+        src="/welcomeImages/signature.png"
         alt="Signature"
         className="mx-auto"
         width={150}
