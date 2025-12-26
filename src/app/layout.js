@@ -1,4 +1,5 @@
 import { Playfair_Display, Montserrat } from "next/font/google";
+import { Suspense } from "react";
 import NavbarDesktop from '../shared/container/NavbarDesktop'
 import NavbarMobile from '../shared/container/NavbarMobile'
 import Footer from '../shared/container/Footer';
@@ -52,12 +53,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.variable} ${playfair.variable} antialiased`}
       >
-        <SmoothScroll>
-          <NavbarDesktop />
-          <NavbarMobile />
-          {children}
-          <Footer />
-        </SmoothScroll>
+        <Suspense fallback={null}>
+          <SmoothScroll>
+            <NavbarDesktop />
+            <NavbarMobile />
+            {children}
+            <Footer />
+          </SmoothScroll>
+        </Suspense>
       </body>
     </html>
   );
