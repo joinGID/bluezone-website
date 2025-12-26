@@ -12,9 +12,9 @@ export default function Navbar() {
   const { scrollY } = useScroll();
   const [scrollDir, setScrollDir] = useState("up");
   const [isScrolled, setIsScrolled] = useState(false);
-const pathname = usePathname();
-const isHome = pathname === "/" || pathname === "/rooms";
-const isTransparent = isHome && !isScrolled;
+  const pathname = usePathname();
+  const isHome = pathname === "/" || pathname === "/rooms";
+  const isTransparent = isHome && !isScrolled;
 
 
   useMotionValueEvent(scrollY, "change", (latest) => {

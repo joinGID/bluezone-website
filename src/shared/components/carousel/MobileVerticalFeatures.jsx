@@ -3,10 +3,10 @@ function MobileVerticalFeatures({ ContentImages }) {
     <section className="bg-[#FBF8F6] px-6 py-16 space-y-24">
       {/* Header */}
       <div className="text-center max-w-xl mx-auto">
-        <h2 className="text-[#0f677d] text-xs tracking-[0.2em] uppercase mb-3">
+        <h2 className="text-aero text-xs tracking-[0.2em] uppercase mb-3">
           Welcome Home
         </h2>
-        <h1 className="text-[#153f41] text-3xl font-serif font-light leading-tight">
+        <h1 className="text-habitat text-3xl font-serif leading-tight">
           The Final Word in Eco-Luxury Living
         </h1>
       </div>
@@ -29,10 +29,10 @@ function MobileVerticalFeatures({ ContentImages }) {
 
           {/* Text */}
           <div className="space-y-3">
-            <h3 className="text-2xl font-serif font-light text-[#173737]">
+            <h3 className="text-2xl font-serif text-habitat">
               {img.title}
             </h3>
-            <p className="text-[#415d60] text-sm leading-relaxed">
+            <p className="text-sage text-sm leading-relaxed">
               {img.description}
             </p>
           </div>

@@ -39,7 +39,7 @@ export default function TwoColumnFeatures({ ContentImages }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
-                className="text-[#0f677d] text-xs tracking-[0.2em] uppercase font-sans font-medium mb-4"
+                className="text-aero text-xs tracking-[0.2em] uppercase font-sans font-medium mb-4"
               >
                 Welcome Home
               </motion.h2>
@@ -48,7 +48,7 @@ export default function TwoColumnFeatures({ ContentImages }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0], delay: 0.1 }}
-                className="text-[#153f41] md:text-5xl text-3xl font-serif font-light leading-tight"
+                className="text-habitat md:text-5xl text-3xl font-serif leading-tight"
               >
                 The Final Word in <br className="hidden md:block" /> Eco-Luxury Living
               </motion.h1>
@@ -62,10 +62,10 @@ export default function TwoColumnFeatures({ ContentImages }) {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full max-w-7xl mx-auto">
                 {/* TEXT */}
                 <div className="space-y-5 text-left order-2 lg:order-1">
-                  <h2 className="leading-tight text-[#173737] md:text-4xl text-2xl font-serif font-light">
+                  <h2 className="leading-tight text-habitat md:text-4xl text-2xl font-serif">
                     {img.title}
                   </h2>
-                  <p className="text-lg text-[#415d60] leading-relaxed max-w-xl font-light">
+                  <p className="text-lg text-sage leading-relaxed max-w-xl">
                     {img.description}
                   </p>
                 </div>

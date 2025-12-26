@@ -35,7 +35,7 @@ export default function MobileMenuCom({ isOpen, onClose }) {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4 }}
-          className="fixed inset-0 bg-[#f7f3ef] z-50 flex flex-col items-center pt-16"
+          className="fixed inset-0 bg-bone z-50 flex flex-col items-center pt-16"
         >
           {/* Close Button */}
           <motion.button
@@ -65,7 +65,7 @@ export default function MobileMenuCom({ isOpen, onClose }) {
                 transition={{ duration: 0.4, delay: 0.1 * i }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => handleNavigation(item)}
-                className="text-2xl text-[#1f3740] font-light cursor-pointer"
+                className="text-2xl text-habitat font-light cursor-pointer"
               >
                 {item}
               </motion.li>
@@ -77,7 +77,7 @@ export default function MobileMenuCom({ isOpen, onClose }) {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="origin-center w-24 h-px bg-[#1f3740]/30 my-10"
+            className="origin-center w-24 h-px bg-habitat/20 my-10"
           />
 
           {/* EXTRA INFO */}
@@ -85,7 +85,7 @@ export default function MobileMenuCom({ isOpen, onClose }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.7 }}
-            className="flex flex-col gap-5 items-center text-[#1f3740]"
+            className="flex flex-col gap-5 items-center text-habitat"
           >
             {/* Location */}
             <div className="flex items-center gap-3 text-sm">
@@ -109,9 +109,9 @@ export default function MobileMenuCom({ isOpen, onClose }) {
               className="
                 mt-4 flex items-center gap-2
                 px-6 py-3 rounded-full
-                border border-[#1f3740]/40
+                border border-habitat/30
                 text-xs uppercase tracking-[0.2em]
-                hover:bg-[#1f3740] hover:text-white
+                hover:bg-habitat hover:text-white
                 transition-all
               "
             >

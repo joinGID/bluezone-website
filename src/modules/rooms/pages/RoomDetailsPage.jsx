@@ -19,8 +19,8 @@ function RoomDetails() {
     <div>
       <RoomHero heroImage={roomData?.image} />
       <RoomAbout roomData={roomData} />
-      <RoomCarousle images={roomData?.images} />
-      <RoomFacilities roomData={roomData?.amenities} />
+      <RoomCarousle bottomText={roomData?.name} images={roomData?.images} />
+      <RoomFacilities  roomData={roomData?.amenities} />
       <RoomInfo  />
       <RoomQuestions />
     </div>

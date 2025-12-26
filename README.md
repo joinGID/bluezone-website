@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BlueZone — Eco-Luxury Living
 
-## Getting Started
+Welcome to the official repository for **BlueZone**, a premium web platform dedicated to luxury, sustainable living spaces. Designed with a focus on nature, science, and wellness.
 
-First, run the development server:
+## 🌟 Project Overview
 
+BlueZone combines high-end architecture with "Blue Zone" principles—promoting longevity, health, and a balanced lifestyle. The website reflects this through a minimalist, "Eco-Luxury" aesthetic featuring smooth animations and a responsive, high-performance UI.
+
+## 🚀 Key Features
+
+- **Eco-Luxury Design**: Standardized brand identity with a refined color palette (Habitat Teal, Bone White).
+- **Smooth Interaction**: Global smooth scrolling using Lenis and Framer Motion for premium UX.
+- **Modular Architecture**: Feature-based directory structure for maximum scalability.
+- **Optimized Media**: High-performance image loading with AVIF/WebP support and custom horizontal galleries.
+- **Mobile First**: Fully optimized mobile experience including dedicated navigation and vertical layout handling.
+
+## 🛠 Technology Stack
+
+- **Next.js 15+** (App Router)
+- **Tailwind CSS 4.0** (Next-gen styling)
+- **Framer Motion** (Sophisticated animations)
+- **Lenis** (Premium smooth scrolling)
+
+## 📚 Documentation
+
+Detailed guides and documentation can be found in the `/docs` directory:
+
+- [**Brand Identity**](./docs/brand-identity.md): Design tokens, colors, and typography standards.
+- [**Architecture**](./docs/architecture.md): Modular structure and coding principles.
+- [**Development Guide**](./docs/development.md): Setup, scripts, and deployment instructions.
+
+---
+
+### Getting Started
+
+For quick setup and local development instructions, see our [**Development Guide**](./docs/development.md).
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open [http://localhost:3000](http://localhost:3000) to view the application.

@@ -16,49 +16,49 @@ function WelcomeText() {
       </div>
 
       {/* Small heading */}
-      <h1 className="md:text-base text-sm font-serif font-light tracking-[0.2em] text-gray-700 mb-6 uppercase">
+      <h1 className="md:text-base text-sm font-serif tracking-[0.2em] text-habitat/70 mb-6 uppercase">
         Welcome to Blue Zone Habitat
       </h1>
 
       {/* Main title */}
-      <h1 className="text-3xl md:text-5xl font-serif font-light text-[#153f41] leading-tight mb-10">
+      <h1 className="text-3xl md:text-5xl font-serif text-habitat leading-tight mb-10">
         Where Luxury Meets <br /> the Ocean Breeze
       </h1>
 
       {/* Greeting */}
-      <p className="md:text-sm text-xs font-light font-serif text-gray-700 mb-6 tracking-wide">
+      <p className="md:text-sm text-xs font-serif text-sage mb-6 tracking-wide">
         Dear Valued Guest,
       </p>
 
       {/* Body paragraphs */}
-      <p className="max-w-xl md:text-sm text-xs font-medium mx-auto text-gray-700 leading-loose mb-6 tracking-wide">
-        Welcome to Blue Zone — a serene  habitat thoughtfully designed
+      <p className="max-w-xl md:text-sm text-xs mx-auto text-sage leading-loose mb-6 tracking-wide">
+        Welcome to Blue Zone — a serene habitat thoughtfully designed
         around nature, science, and timeless Blue Zone principles. Here,
         sunlight, fresh air, water, architecture, and community come together to
         create a way of living that feels calmer, healthier, and more enduring.
       </p>
 
-      <p className="max-w-xl md:text-sm text-xs font-light font-serif mx-auto text-gray-700 leading-loose mb-6 tracking-wide">
+      <p className="max-w-xl md:text-sm text-xs font-serif mx-auto text-sage leading-loose mb-6 tracking-wide">
         Our villas are crafted with intention — spaces that encourage rest,
         connection, and balance. Every detail has been carefully considered to
         support your well-being, allowing you to unwind effortlessly while
         remaining deeply connected to the rhythm of the coast.
       </p>
 
-      <p className="max-w-xl md:text-sm text-xs font-light font-serif mx-auto text-gray-700 leading-loose mb-10 tracking-wide">
+      <p className="max-w-xl md:text-sm text-xs font-serif mx-auto text-sage leading-loose mb-10 tracking-wide">
         Whether you are here to pause, celebrate, or simply breathe more freely,
         we invite you to experience a stay where wellness is not an amenity, but
         the foundation of everything around you.
       </p>
 
       {/* Philosophy quote */}
-      <p className="max-w-xl mx-auto text-sm md:text-base font-serif italic text-[#153f41] leading-relaxed mb-12">
+      <p className="max-w-xl mx-auto text-sm md:text-base font-serif italic text-habitat leading-relaxed mb-12">
         “Wellness isn’t an amenity. <br />
         It’s the architecture of your life.”
       </p>
 
       {/* Closing */}
-      <p className="text-gray-700 mb-6 text-sm font-medium">
+      <p className="text-sage mb-6 text-sm font-medium">
         Warmest regards,
       </p>
 
@@ -73,10 +73,10 @@ function WelcomeText() {
 
       {/* Name */}
       <div>
-        <p className="text-xl font-serif font-light text-[#153f41]">
+        <p className="text-xl font-serif text-habitat">
           John Doe
         </p>
-        <p className="md:text-sm text-xs text-[#bfa58e]">
+        <p className="md:text-sm text-xs text-aero">
           General Manager
         </p>
       </div>

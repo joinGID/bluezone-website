@@ -1,11 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand Palette */
+  --habitat-deep: #153F41;
+  --habitat-aero: #0F677D;
+  --bone-soft: #F7F3EF;
+  --charcoal-black: #171B1C;
+  --sage-slate: #415D60;
+  --mist-light: #D4D4D4;
+
+  --background: var(--bone-soft);
+  --foreground: var(--charcoal-black);
 }
 
 @theme inline {
+  --color-habitat: var(--habitat-deep);
+  --color-aero: var(--habitat-aero);
+  --color-bone: var(--bone-soft);
+  --color-charcoal: var(--charcoal-black);
+  --color-sage: var(--sage-slate);
+  --color-mist: var(--mist-light);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-montserrat);
@@ -22,7 +37,26 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: var(--font-montserrat);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+strong,
+b {
+  font-weight: 600;
 }
 
 /* Lenis Recommended CSS */

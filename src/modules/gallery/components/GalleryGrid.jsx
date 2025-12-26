@@ -152,8 +152,8 @@ export default function GalleryGrid() {
                   className={`
                     px-6 py-2 rounded-sm text-xs uppercase tracking-widest font-medium transition-all duration-300
                     ${active
-                      ? "bg-[#153f41] text-white shadow-lg shadow-[#153f41]/20"
-                      : "text-slate-600 hover:bg-slate-100"
+                      ? "bg-habitat text-white shadow-lg shadow-habitat/20"
+                      : "text-sage hover:bg-black/5"
                     }
                   `}
                 >
