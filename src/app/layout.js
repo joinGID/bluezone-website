@@ -2,6 +2,7 @@ import { Playfair_Display, Montserrat } from "next/font/google";
 import NavbarDesktop from '../shared/container/NavbarDesktop'
 import NavbarMobile from '../shared/container/NavbarMobile'
 import Footer from '../shared/container/Footer';
+import SmoothScroll from "@/src/shared/components/SmoothScroll";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -51,10 +52,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.variable} ${playfair.variable} antialiased`}
       >
-         <NavbarDesktop  />
-            <NavbarMobile/>
-        {children}
-         <Footer/>
+        <SmoothScroll>
+          <NavbarDesktop />
+          <NavbarMobile />
+          {children}
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );

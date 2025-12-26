@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AutoCarousel from '@/src/shared/components/carousle/AutoCarousel';
+import AutoCarousel from '@/src/shared/components/carousel/AutoCarousel';
 import { aboutImages } from '../constants/homeConstants';
 
 

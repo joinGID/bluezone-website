@@ -4,14 +4,18 @@ import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 import { MapPin, Phone, Menu, X, Download, FileText } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+
 
 export default function Navbar() {
   const router = useRouter();
   const { scrollY } = useScroll();
   const [scrollDir, setScrollDir] = useState("up");
   const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const [iconHover, setIconHover] = useState(false);
+const pathname = usePathname();
+const isHome = pathname === "/" || pathname === "/rooms";
+const isTransparent = isHome && !isScrolled;
+
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const prev = scrollY.getPrevious() ?? 0;
@@ -32,8 +36,8 @@ export default function Navbar() {
         transition={{ duration: 0.35, ease: "easeOut" }}
         className={`
           fixed top-0 z-50 hidden md:block w-full
-          backdrop-blur-md transition-all duration-300
-          ${isScrolled ? "bg-white text-black shadow-sm" : "bg-transparent text-white"}
+          backdrop-blur-xs transition-all duration-300
+          ${isTransparent ? "bg-transparent text-white" : "bg-white text-black shadow-sm"}
         `}
       >
         <div className="max-w-[1400px] mx-auto px-8 py-5 flex items-center">
@@ -111,53 +115,7 @@ export default function Navbar() {
         </div>
       </motion.nav>
 
-      {/* ================= MOBILE NAV ================= */}
-      {/* <div
-        className={`
-          fixed top-0 z-50 w-full md:hidden backdrop-blur-md transition-all
-          ${isScrolled ? "bg-white text-black shadow-sm" : "bg-transparent text-white"}
-        `}
-      >
-        <div className="px-4 py-4 flex items-center justify-between">
-          <h1 className="text-lg font-semibold tracking-widest">Blue zone</h1>
 
-          <button onClick={() => setMobileOpen(!mobileOpen)}>
-            {mobileOpen ? <X size={26} /> : <Menu size={26} />}
-          </button>
-        </div>
-
-
-        <motion.div
-          initial={{ height: 0, opacity: 0 }}
-          animate={{
-            height: mobileOpen ? "auto" : 0,
-            opacity: mobileOpen ? 1 : 0,
-          }}
-          transition={{ duration: 0.3, ease: "easeOut" }}
-          className="overflow-hidden"
-        >
-          <div className="px-6 pb-6 space-y-5 text-lg">
-            {navItems.map((item) => (
-              <div key={item} className="border-b border-black/10 pb-2">
-                {item}
-              </div>
-            ))}
-
-            <div className="pt-4 space-y-3 text-sm opacity-80">
-              <div className="flex items-center gap-2">
-                <MapPin size={16} /> Malibu, CA
-              </div>
-              <div className="flex items-center gap-2">
-                <Phone size={16} /> +1 234 567 890
-              </div>
-            </div>
-
-            <button className="w-full bg-black text-white py-3 rounded-md uppercase tracking-wide">
-              Brochure
-            </button>
-          </div>
-        </motion.div>
-      </div> */}
     </>
   );
 }

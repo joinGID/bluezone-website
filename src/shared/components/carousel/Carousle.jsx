@@ -9,6 +9,7 @@ import { Navigation, Pagination, A11y, Mousewheel } from "swiper/modules";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 function Carousle({ images = [] }) {
+  console.log(images,"images");
   return (
     <div className="relative">
       <Swiper
@@ -41,12 +42,12 @@ function Carousle({ images = [] }) {
             <div className="relative w-full h-[50vh] md:h-[55vh] overflow-hidden rounded-xl bg-gray-200">
               <picture>
                 {/* BEST FORMAT */}
-                {img.avif && (
+                {img?.avif && (
                   <source srcSet={img.avif} type="image/avif" />
                 )}
 
                 {/* FALLBACK */}
-                {img.webp && (
+                {img?.webp && (
                   <source srcSet={img.webp} type="image/webp" />
                 )}
 

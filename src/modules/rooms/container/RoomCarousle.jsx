@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 
-import Carousle from "@/src/shared/components/carousle/Carousle";
+import HorizontalScrollGallery from "../../../shared/components/carousel/HorizontalCarousel";
 
 
 function RoomCarousle({ images }) {
   return (
-    <div>
-      <Carousle images={images} />
+    <div className="bg-amber-50">
+      <HorizontalScrollGallery images={images} />
     </div>
   );
 }

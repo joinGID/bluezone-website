@@ -8,7 +8,7 @@ const FooterLinks = ({theme}) => {
         {
             title: "Company",
             links: [
-                { label: "Work", href: "/work" },
+                { label: "Home", href: "/work" },
                 { label: "Services", href: "/services" },
                 { label: "About", href: "/about" },
                 { label: "Contact", href: "/contact" },

@@ -25,7 +25,7 @@ const page = () => {
   
 
   return (
-    <div className='text-3xl font-bold text-center'>
+    <div className='text-3xl font-bold text-center md:mt-0 mt-18'>
 
      
     <LandingVideo/>

@@ -2,10 +2,8 @@
 import { Bed, Bath, VectorSquare } from "lucide-react";
 import { rooms } from "../constants/roomConstants";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export default function RoomCard() {
-  const router = useRouter();
   return (
     <div className="p-4 md:p-12 lg:p-24 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 bg-white">
       {rooms?.map((item, index) => (
@@ -26,7 +24,7 @@ export default function RoomCard() {
                 </h2>
                 {item.amenities?.map((amenity, idx) => (
                   <h2 key={idx} className="flex items-center gap-2">
-                    <img src={amenity.icon} alt={amenity.name} className="w-5 h-5 invert opacity-90" />
+                    <img src={amenity.icon} alt={amenity.name} className="w-6 h-6 invert opacity-100" />
                     {amenity.name}
                   </h2>
                 ))}
@@ -45,9 +43,9 @@ export default function RoomCard() {
                 </div>
               </div>
 
-              <button onClick={() => router.push(`/rooms/${item.slug}`)} className="px-5 py-3 hover:bg-black hover:text-white  border border-white/30 bg-white/10 backdrop-blur-sm text-white text-xs uppercase tracking-widest font-medium group-hover:bg-white group-hover:text-black transition-all duration-300">
+              <Link href={`/rooms/${item.slug}`} className="px-5 py-3 hover:bg-black hover:text-white  border border-white/30 bg-white/10 backdrop-blur-sm text-white text-xs uppercase tracking-widest font-medium group-hover:bg-white group-hover:text-black transition-all duration-300">
                 View Details
-              </button>
+              </Link>
             </div>
           </div>
         </div>

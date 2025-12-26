@@ -1,7 +1,7 @@
 "use client";
 import { useState, useMemo, useRef, useEffect } from "react";
+import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
 import { GalleryByType } from "../constants/GalleryImages";
-import OutlineButton from "@/src/shared/components/OutlineButton";
 import { X } from "lucide-react";
 
 const FILTERS = [
@@ -108,6 +108,19 @@ const GalleryMediaItem = ({ mediaItem, onClick }) => {
 export default function GalleryGrid() {
   const [activeFilter, setActiveFilter] = useState("interior");
   const [selectedMedia, setSelectedMedia] = useState(null);
+  const [isHidden, setIsHidden] = useState(false);
+
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious() ?? 0;
+    // Hide on scroll down, show on scroll up
+    if (latest > previous && latest > 150) {
+      setIsHidden(true);
+    } else {
+      setIsHidden(false);
+    }
+  });
 
   const imagesToShow = useMemo(() => {
     return GalleryByType[activeFilter] ?? [];
@@ -117,30 +130,43 @@ export default function GalleryGrid() {
 
   return (
     <>
-      <section className="min-h-screen h-auto bg-[#F6F6F8] flex justify-center sm:px-8 lg:px-16 py-10">
-        <div className="w-full max-w-8xl">
+      <section className="min-h-screen h-auto bg-[#F6F6F8] flex flex-col items-center sm:px-8 lg:px-16 py-10 mt-20 relative">
 
-          {/* Filter Buttons */}
-          <div className="mb-6 flex flex-wrap gap-3">
+        {/* Floating Sticky Filter Bar */}
+        <motion.div
+          variants={{
+            visible: { y: 0, opacity: 1 },
+            hidden: { y: -100, opacity: 0 },
+          }}
+          animate={isHidden ? "hidden" : "visible"}
+          transition={{ duration: 0.35, ease: "easeInOut" }}
+          className="fixed top-22 md:top-28  z-40 w-full flex justify-center px-4"
+        >
+          <div className="bg-white/80 backdrop-blur-md border border-black/5 shadow-xl shadow-black/5 rounded-lg px-2 py-2 flex items-center gap-1">
             {FILTERS.map((f) => {
               const active = f.key === activeFilter;
               return (
-                <OutlineButton
+                <button
                   key={f.key}
                   onClick={() => setActiveFilter(f.key)}
-                  className={
-                    active
-                      ? "!bg-black !text-white !border-black !hover:bg-black !hover:text-white"
-                      : ""
-                  }
-                  label={f.label}
-                />
+                  className={`
+                    px-6 py-2 rounded-sm text-xs uppercase tracking-widest font-medium transition-all duration-300
+                    ${active
+                      ? "bg-[#153f41] text-white shadow-lg shadow-[#153f41]/20"
+                      : "text-slate-600 hover:bg-slate-100"
+                    }
+                  `}
+                >
+                  {f.label}
+                </button>
               );
             })}
           </div>
+        </motion.div>
 
+        <div className="w-full max-w-8xl">
           {/* Dynamic Masonry Grid */}
-          <div className="columns-1 md:columns-2 lg:columns-3 gap-6">
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 pt-14">
             {imagesToShow.map((item, index) => (
               <GalleryMediaItem
                 key={index}

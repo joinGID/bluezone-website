@@ -1,8 +1,9 @@
 import React from "react";
 import { galleryImage } from "../../home/constants/homeConstants";
-import Carousle from "@/src/shared/components/carousle/Carousle";
+import Carousle from "@/src/shared/components/carousel/Carousle";
 import OutlineButton from "@/src/shared/components/OutlineButton";
 import { useRouter } from "next/navigation";
+import HorizontalScrollGallery from "../../../shared/components/carousel/HorizontalCarousel";
 
 function PhotoGalleryHeader() {
   const router = useRouter();
@@ -29,7 +30,8 @@ function PhotoGalleryHeader() {
           />
         </div>
       </div>
-      <Carousle images={galleryImage} />
+      {/* <Carousle images={galleryImage} /> */}
+      <HorizontalScrollGallery images={galleryImage} />
     </div>
   );
 }

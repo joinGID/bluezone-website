@@ -1,3 +1,4 @@
+import AboutCarousel from "@/src/modules/about/container/AboutCarousel";
 import RoomCard from "../../modules/rooms/components/RoomCard";
 
 export const metadata = {
@@ -7,7 +8,7 @@ export const metadata = {
 export default function RoomDetails() {
     return (
         <div>
-
+            <AboutCarousel />
             <RoomCard />
         </div>
     );

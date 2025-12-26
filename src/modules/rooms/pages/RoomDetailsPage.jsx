@@ -17,7 +17,7 @@ function RoomDetails() {
 
   return (
     <div>
-      <RoomHero heroImage={roomData.image} />
+      <RoomHero heroImage={roomData?.image} />
       <RoomAbout roomData={roomData} />
       <RoomCarousle images={roomData?.images} />
       <RoomFacilities roomData={roomData?.amenities} />

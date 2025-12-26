@@ -15,45 +15,44 @@ export const rooms = [
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+        
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+        
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+        
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+        
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+        
+        
+      },
+      {
+        type:"image",
+        png:"/rooms/alt.png",
       },
     ],
     amenities: [
-      { name: "3 Bedrooms", icon: "/icons/bed.svg" },
-      { name: "3 Bathrooms", icon: "/icons/bath.svg" },
-      { name: "Living Area", icon: "/icons/living.svg" },
-      { name: "Kitchen", icon: "/icons/kitchen.svg" }
+      { name: "3 Bedrooms", icon: "/icons/bed.png" },
+      { name: "3 Bathrooms", icon: "/icons/bathroom.png" },
+      { name: "Living Area", icon: "/icons/livingArea.png" },
+      { name: "Kitchen", icon: "/icons/kitchen.png" }
     ]
   },
   {
@@ -70,45 +69,41 @@ export const rooms = [
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+        
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+        
+
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+        
+
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+    
       },
     ],
     amenities: [
-      { name: "4 Bedrooms", icon: "/icons/bed.svg" },
-      { name: "4 Bathrooms", icon: "/icons/bath.svg" },
-      { name: "Family Lounge", icon: "/icons/lounge.svg" },
-      { name: "Deck", icon: "/icons/deck.svg" }
+      { name: "4 Bedrooms", icon: "/icons/bed.png" },
+      { name: "4 Bathrooms", icon: "/icons/bathroom.png" },
+      { name: "Family Lounge", icon: "/icons/familyLounge.png" },
+      { name: "Deck", icon: "/icons/deck.png" }
     ]
   },
   {
@@ -125,39 +120,34 @@ export const rooms = [
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+       
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+       
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+      
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+        
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+        
       },
     ],
     amenities: [
       { name: "4 Bed + Study", icon: "/icons/bed.svg" },
-      { name: "Private Pool", icon: "/icons/pool.svg" },
-      { name: "Terrace Garden", icon: "/icons/garden.svg" },
-      { name: "Home Theater", icon: "/icons/theater.svg" }
+      { name: "Private Pool", icon: "/icons/swimming-pool.png" },
+      { name: "Terrace Garden", icon: "/icons/terraceGarden.png" },
+      { name: "Home Theater", icon: "/icons/homeTheatre.png" }
     ]
   },
   {
@@ -174,39 +164,35 @@ export const rooms = [
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+       
+        
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+       
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+        
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+       
       },
       {
         type:"image",
         png:"/rooms/alt.png",
-        avif:"/rooms/alt.avif",
-        webp:"/rooms/alt.webp"
+        
       },
     ],
     amenities: [
-      { name: "5 Bedrooms", icon: "/icons/bed.svg" },
-      { name: "Private Pool", icon: "/icons/pool.svg" },
-      { name: "Multipurpose Hall", icon: "/icons/hall.svg" },
-      { name: "Elevator", icon: "/icons/elevator.svg" }
+      { name: "5 Bedrooms", icon: "/icons/bed.png" },
+      { name: "Private Pool", icon: "/icons/swimming-pool.png" },
+      { name: "Terrace Garden", icon: "/icons/terraceGarden.png" },
+      { name: "Home Theater", icon: "/icons/homeTheatre.png" }
     ]
   },
 ];
