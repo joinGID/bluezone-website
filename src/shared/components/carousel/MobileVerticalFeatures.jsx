@@ -32,9 +32,26 @@ function MobileVerticalFeatures({ ContentImages }) {
             <h3 className="text-2xl font-serif text-habitat">
               {img.title}
             </h3>
-            <p className="text-sage text-sm leading-relaxed">
-              {img.description}
-            </p>
+             <p
+                    className="
+                      max-w-xl 
+                      font-serif 
+                      text-sm sm:text-base 
+                      font-light 
+                      leading-relaxed 
+                      text-slate-600 
+                      mx-auto lg:mx-0
+
+                      text-left              /* mobile */
+                      sm:text-justify         /* tablet+ */
+                      hyphens-none            /* mobile */
+                      sm:hyphens-auto         /* tablet+ */
+                      hidden sm:block        /* Show on tablet+ */
+                      whitespace-pre-line
+                    "
+                  >
+                    {img.description}
+                  </p>
           </div>
         </div>
       ))}
