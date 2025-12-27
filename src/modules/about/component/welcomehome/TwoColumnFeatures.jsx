@@ -4,11 +4,12 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-
 export default function TwoColumnFeatures({ ContentImages }) {
   const targetRef = useRef(null);
+
   const { scrollYProgress } = useScroll({
     target: targetRef,
+    offset: ["start start", "end end"],
   });
 
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
@@ -16,71 +17,104 @@ export default function TwoColumnFeatures({ ContentImages }) {
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-[#FBF8F6]">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        {/* Header Section as the first slide or overlay? 
-            User's design has a header. Let's make the header scrolling too or static?
-            Let's put the header in the first frame or separate. 
-            For now, I'll put the Main Header as a separate overlay or part of the flow *before* the horizontal scroll if possible without breaking the sticky.
-            Actually, commonly the header is part of the flow before the horizontal section. 
-            But to keep it simple with the ref, I'll include the header in the first 'panel' or before the sticky container if it's meant to scroll away.
-            However, the request implies the *features* scroll horizontally. 
-            I'll put the Header inside the first item or separate.
-            
-            Let's try a standard HorizontalScrollCarousel pattern.
-            I will place the header absolute or just part of the first section effectively.
-            Actually, let's keep the Header static at the start and then the items scroll.
-        */}
 
         <motion.div style={{ x }} className="flex">
-          {/* Intro / Header Panel */}
+
+          {/* ================= INTRO / HEADER PANEL ================= */}
           <div className="w-screen h-screen flex flex-col justify-center items-center flex-shrink-0 px-6 lg:px-12 bg-[#FBF8F6]">
             <div className="text-center max-w-4xl">
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
-                className="text-aero text-xs tracking-[0.2em] uppercase font-sans font-medium mb-4"
+                transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+                className="text-aero text-[10px] md:text-xs tracking-[0.2em] uppercase font-sans font-medium mb-3 md:mb-4"
               >
                 Welcome Home
               </motion.h2>
+
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0], delay: 0.1 }}
-                className="text-habitat md:text-5xl text-3xl font-serif leading-tight"
+                transition={{
+                  duration: 0.8,
+                  ease: [0.25, 0.1, 0.25, 1],
+                  delay: 0.1,
+                }}
+                className="text-habitat md:text-5xl text-3xl font-serif leading-tight px-4 md:px-0"
               >
                 The Final Word in <br className="hidden md:block" /> Eco-Luxury Living
               </motion.h1>
-
             </div>
           </div>
 
-          {/* Feature Slides */}
+          {/* ================= FEATURE SLIDES ================= */}
           {ContentImages.images.map((img) => (
-            <div key={img.id} className="w-screen h-screen flex items-center justify-center flex-shrink-0 px-6 lg:px-20 bg-[#FBF8F6]">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full max-w-7xl mx-auto">
-                {/* TEXT */}
-                <div className="space-y-5 text-left order-2 lg:order-1">
+            <div
+              key={img.id}
+              className="w-screen h-screen flex items-center justify-center flex-shrink-0 px-6 lg:px-20 bg-[#FBF8F6]"
+            >
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center w-full max-w-7xl mx-auto">
+
+                {/* -------- TEXT -------- */}
+                <div className="space-y-4 md:space-y-5 text-center lg:text-left order-2 lg:order-1 px-2 md:px-0">
                   <h2 className="leading-tight text-habitat md:text-4xl text-2xl font-serif">
                     {img.title}
                   </h2>
-                  <p className="text-lg text-sage leading-relaxed max-w-xl">
+
+                  {/* Desktop / Tablet Description */}
+                  <p
+                    className="
+                      max-w-xl 
+                      font-serif 
+                      text-sm sm:text-base 
+                      font-light 
+                      leading-relaxed 
+                      text-slate-600 
+                      mx-auto lg:mx-0
+
+                      text-left              /* mobile */
+                      sm:text-justify         /* tablet+ */
+                      hyphens-none            /* mobile */
+                      sm:hyphens-auto         /* tablet+ */
+                      hidden sm:block        /* Show on tablet+ */
+                      whitespace-pre-line
+                    "
+                  >
                     {img.description}
+                  </p>
+
+                  {/* Mobile (SE and below) Description: removing last sentence & trailing dot */}
+                  <p
+                    className="
+                      max-w-xl 
+                      font-serif 
+                      text-sm 
+                      font-light 
+                      leading-relaxed 
+                      text-slate-600 
+                      mx-auto 
+                      text-left 
+                      hyphens-none 
+                      block sm:hidden       /* Show on mobile SE-sized devices */
+                    "
+                  >
+                    {img.description.split('\n\n').slice(0, -1).join('. ')}
                   </p>
                 </div>
 
-                {/* IMAGE */}
-                <div className="flex justify-end w-full h-[60vh] lg:h-[80vh] order-1 lg:order-2">
+                {/* -------- IMAGE -------- */}
+                <div className="flex justify-center lg:justify-end w-full h-[45vh] lg:h-[80vh] order-1 lg:order-2">
                   <div className="overflow-hidden bg-gray-200 shadow-xl w-full h-full rounded-2xl">
                     <picture>
-                      {/* AVIF – best compression */}
+                      {/* AVIF */}
                       <source srcSet={img.avif} type="image/avif" />
 
-                      {/* WebP – fallback */}
+                      {/* WebP */}
                       <source srcSet={img.webp} type="image/webp" />
 
-                      {/* PNG/JPG – universal fallback */}
+                      {/* PNG / JPG fallback */}
                       <img
                         src={img.png}
                         alt={img.title}
@@ -90,9 +124,11 @@ export default function TwoColumnFeatures({ ContentImages }) {
                     </picture>
                   </div>
                 </div>
+
               </div>
             </div>
           ))}
+
         </motion.div>
       </div>
     </section>

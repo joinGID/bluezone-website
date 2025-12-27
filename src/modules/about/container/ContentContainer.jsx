@@ -10,17 +10,17 @@ import { ContentImages } from "../constants/contentImages";
 export default function ContentContainer() {
   return (
     <section className="w-full h-auto bg-[#FBF8F6]">
-      {/* <TwoColumnFeatures ContentImages={ContentImages} /> */}
+      <TwoColumnFeatures ContentImages={ContentImages} />
       <>
-      {/* Desktop */}
+      {/* Desktop
       <div className="hidden lg:block">
         <TwoColumnFeatures ContentImages={ContentImages} />
       </div>
 
-      {/* Mobile */}
+
       <div className="block lg:hidden">
         <MobileVerticalFeatures ContentImages={ContentImages} />
-      </div>
+      </div> */}
     </>
     </section>
   );

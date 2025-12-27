@@ -19,11 +19,11 @@ export default function NavbarMobile() {
     const previous = scrollY.getPrevious() ?? 0;
 
     // scroll UP → hide navbar
-    if (latest < previous && latest > 80) {
+    if (latest < previous ) {
       setHidden(false);
     }
     // scroll DOWN → show navbar
-    else if (latest > previous) {
+    else if (latest > previous && latest > 80) {
       setHidden(true);
     }
   });

@@ -8,7 +8,7 @@ export const ContentImages = {
       webp: "/gallery/Exterior/exteriorWebp/e2.webp",
       title: "Eco-Luxury Crafted Around Nature",
       description:
-        "Blue Zone Habitat is an exclusive sanctuary where architecture, nature, and comfort exist in perfect harmony. With just 51 Signature Villas spread across a thoughtfully planned landscape, each home is positioned to receive abundant sunlight, natural ventilation, and uninterrupted views of Anakkayam’s greenery.\n\nEvery villa is designed to respond to the local climate—reducing heat, enhancing airflow, and creating calm interiors that feel naturally comfortable throughout the day. Private gardens, landscaped pathways, and open terraces seamlessly connect indoor living with the outdoors.\n\nHere, luxury is not excess—it is space, silence, light, and balance. A home that feels refined, restorative, and deeply connected to its surroundings.",
+        "Blue Zone Habitat is an exclusive sanctuary where architecture, nature, and comfort exist in harmony. With only 51 Signature Villas set within a thoughtfully planned landscape, every home enjoys abundant sunlight, natural ventilation, and uninterrupted views of Anakkayam’s greenery.\n\nDesigned to respond to the local climate, each villa enhances airflow, reduces heat, and creates calm, naturally comfortable interiors. Private gardens, landscaped pathways, and open terraces \n\n seamlessly connect indoor living with the outdoors.Here, luxury is not excess—it is space, silence, light, and balance. A refined home deeply connected to its surroundings.",
     },
 
     {
@@ -18,7 +18,7 @@ export const ContentImages = {
       webp: "/gallery/Interior/interiorWebp/i1.webp",
       title: "Homes Designed for Wellness & Longevity",
       description:
-        "Inspired by global Blue Zone principles, Blue Zone Habitat goes beyond conventional living to create a lifestyle centered on health, wellbeing, and longevity. Every element—from breathable architecture to green corridors—is designed to support a healthier way of life.\n\nNatural light-filled interiors, cross-ventilated spaces, and climate-adaptive materials reduce dependence on artificial cooling while enhancing everyday comfort. Walking-friendly pathways, open green spaces, and calm community zones encourage movement, mindfulness, and connection.\n\nThis is a place where your home actively supports your wellbeing—quietly, naturally, and effortlessly—every single day.",
+        "Inspired by global Blue Zone principles, Blue Zone Habitat offers a lifestyle centered on health, wellbeing, and longevity. Every detail—from breathable architecture to green corridors—supports a healthier way of living\n\n.Light-filled interiors, cross-ventilated spaces, and climate-responsive materials reduce reliance on artificial cooling while enhancing daily comfort. Walkable pathways, open greens, and quiet community zones encourage movement, mindfulness, and connection.\n\nA home that supports your wellbeing—naturally, quietly, and every day.",
     },
 
     {
@@ -28,7 +28,7 @@ export const ContentImages = {
       webp: "/gallery/Interior/interiorWebp/i4.webp",
       title: "Privacy, Community & Thoughtful Living",
       description:
-        "Blue Zone Habitat is designed as a close-knit yet private community, where meaningful connections and personal space coexist. With limited villas and carefully planned layouts, residents enjoy both exclusivity and a sense of belonging.\n\nWide internal roads, landscaped walkways, and shared wellness-focused amenities create natural opportunities for interaction—without compromising privacy. Each villa opens into serene outdoor spaces, allowing families to enjoy quiet moments while staying connected to a vibrant neighborhood.\n\nIt’s a community built with intention—where life feels slower, relationships feel richer, and every day feels considered.",
+        "Blue Zone Habitat is a close-knit yet private community where personal space and meaningful connections coexist. With a limited number of villas and carefully planned layouts, residents enjoy both exclusivity and belonging\n\n.Wide internal roads, landscaped walkways, and shared wellness-focused amenities create natural moments of interaction—without compromising privacy. Each villa opens to serene outdoor spaces, offering calm within a vibrant neighborhood.\n\nA community designed with intention—where life feels slower, connections feel deeper, and every day feels considered.",
     },
   ],
 };

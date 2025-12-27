@@ -87,10 +87,17 @@ export default function Navbar() {
 
           {/* RIGHT */}
           <div className="flex flex-1 justify-end items-center gap-8 text-sm lg:text-base">
-            <div className="hidden lg:flex items-center gap-2 cursor-pointer">
-              <MapPin size={16} />
-              Manjeri
-            </div>
+            <a
+              href="https://maps.app.goo.gl/SKFYdjC6bJQmeMq39?g_st=awb"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="flex items-center gap-3 text-sm cursor-pointer"
+            >
+              <MapPin size={18} />
+              <span>Manjeri</span>
+            </a>
+
 
             <div className="hidden lg:flex items-center gap-2 cursor-pointer">
               <Phone size={16} />

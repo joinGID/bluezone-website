@@ -88,10 +88,15 @@ export default function MobileMenuCom({ isOpen, onClose }) {
             className="flex flex-col gap-5 items-center text-habitat"
           >
             {/* Location */}
-            <div className="flex items-center gap-3 text-sm">
+            <a
+              href="https://maps.app.goo.gl/SKFYdjC6bJQmeMq39?g_st=awb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-sm cursor-pointer"
+            >
               <MapPin size={18} />
               <span>Manjeri</span>
-            </div>
+            </a>
 
             {/* Phone */}
             <a
