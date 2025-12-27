@@ -12,7 +12,7 @@ export default function ContentContainer() {
     <section className="w-full h-auto bg-[#FBF8F6]">
       {/* <TwoColumnFeatures ContentImages={ContentImages} /> */}
       <>
-      Desktop
+    
       <div className="hidden lg:block">
         <TwoColumnFeatures ContentImages={ContentImages} />
       </div>

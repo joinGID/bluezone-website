@@ -63,17 +63,18 @@ function WelcomeText() {
       </p>
 
       {/* Signature */}
-      <Image
-        src="/welcomeImages/signature.png"
+      {/* <Image
+        src="/landing/sign.png"
         alt="Signature"
-        className="mx-auto"
-        width={150}
-        height={100}
-      />
+        className=" w-[280px] h-[280px] mx-auto "
+        width={190}
+        height={190}
+      /> */}
+      <img src="/landing/sign.png" alt="Signature" className=" w-[160px] h-[100px] mx-auto -mt-2 rotate-20" width={190} height={190} />
 
       {/* Name */}
       <div>
-        <p className="text-xl font-serif text-habitat">
+        <p className="text-xl font-serif text-habitat mt-2">
            DR SAHID CHOLAYIL
         </p>
         <p className="md:text-sm text-xs text-aero">
