@@ -31,22 +31,33 @@ export default function LandingVideo() {
                 muted={muted}
                 playsInline
                 poster="/landing/landingVIdeoALt.png"
-                className="w-full md:h-auto h-100 object-cover"
+                className="w-full md:h-screen h-[90vh] object-cover"
             />
 
+            {/* Light Black Overlay */}
+            <div className="absolute inset-0 bg-black/40 z-10" />
+
             {/* Blue zone-style Overlay Text */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none px-4">
-
-                {/* Small label */}
-                <p className="text-white/90 text-xs md:text-sm tracking-[0.25em] uppercase mb-4 drop-shadow-md">
-                    About Bluezone
-                </p>
-
-                {/* Big serif title */}
-                <h1 className="text-white font-serif font-light text-4xl md:text-6xl lg:text-7xl leading-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.6)]">
-                    Your Home for Better Living
-                </h1>
-
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none px-4 text-white z-20">
+                <div className="flex flex-col items-center gap-6 max-w-5xl">
+                    <h2
+                        className="text-sm md:text-lg uppercase tracking-[0.2em] font-light mb-8"
+                    >
+                        EVOLURA
+                    </h2>
+                    <h1 className="text-4xl md:text-7xl font-serif font-medium leading-tight drop-shadow-2xl">
+                        THE HEART OF <br /> COMMUNITY LIFE
+                    </h1>
+                    <p className="text-lg md:text-xl font-light tracking-wide max-w-2xl opacity-90 drop-shadow-lg">
+                        Where connections, wellness, and leisure blend seamlessly into modern
+                        living.
+                    </p>
+                    <div className="mt-6 py-3 px-8 border border-white/30 rounded-full backdrop-blur-sm bg-white/5 drop-shadow-lg">
+                        <p className="text-xs md:text-sm tracking-[0.2em] uppercase font-medium">
+                            “ Second Largest Clubhouse in Kerala ”
+                        </p>
+                    </div>
+                </div>
             </div>
 
             {/* Controls – bottom right */}
