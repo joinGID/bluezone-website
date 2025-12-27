@@ -46,7 +46,7 @@ function MobileVerticalFeatures({ ContentImages }) {
                       sm:text-justify         /* tablet+ */
                       hyphens-none            /* mobile */
                       sm:hyphens-auto         /* tablet+ */
-                      hidden sm:block        /* Show on tablet+ */
+                      block        /* Show on tablet+ */
                       whitespace-pre-line
                     "
                   >
