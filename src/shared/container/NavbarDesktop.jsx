@@ -99,10 +99,13 @@ export default function Navbar() {
             </a>
 
 
-            <div className="hidden lg:flex items-center gap-2 cursor-pointer">
-              <Phone size={16} />
-              +1234567890
-            </div>
+           <a
+              href="tel:+919946220228"
+              className="flex items-center gap-3 text-sm"
+            >
+              <Phone size={18} />
+              <span>+91 99462 20228</span>
+            </a>
 
             <button
               aria-label="Download brochure"

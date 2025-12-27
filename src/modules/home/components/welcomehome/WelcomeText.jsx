@@ -74,10 +74,10 @@ function WelcomeText() {
       {/* Name */}
       <div>
         <p className="text-xl font-serif text-habitat">
-          John Doe
+           DR SAHID CHOLAYIL
         </p>
         <p className="md:text-sm text-xs text-aero">
-          General Manager
+          Chairman
         </p>
       </div>
     </section>

@@ -100,11 +100,11 @@ export default function MobileMenuCom({ isOpen, onClose }) {
 
             {/* Phone */}
             <a
-              href="tel:+1234567890"
+              href="tel:+919946220228"
               className="flex items-center gap-3 text-sm"
             >
               <Phone size={18} />
-              <span>+1234567890</span>
+              <span>+91 99462 20228</span>
             </a>
 
             {/* Brochure */}
