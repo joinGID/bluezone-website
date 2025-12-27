@@ -18,7 +18,7 @@ const FooterBrand = ({ theme }) => {
                 <img
                     src="/landing/infravision.png"
                     alt="BlueZone Logo"
-                    className='w-40 md:w-56 brightness-95'
+                    className='w-60 md:w-86 brightness-95'
                 />
             </div>
 

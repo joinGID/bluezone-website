@@ -2,38 +2,39 @@
 import { motion } from "framer-motion";
 
 export default function FooterLocations({ theme }) {
-    const locations = [
+   const locations = [
   {
-    position: "Sales & Enquiry",
+    position: "Sales Manager",
     name: "John Doe",
     number: "+1 234 567 890",
   },
   {
-    position: "Sales & Enquiry",
+    position: "Sales Executive",
     name: "Jane Smith",
     number: "+1 345 678 901",
   },
   {
-    position: "Sales & Enquiry",
+    position: "Customer Relations",
     name: "Michael Brown",
     number: "+1 456 789 012",
   },
   {
-    position: "Sales & Enquiry",
+    position: "Business Development",
     name: "Emily Johnson",
     number: "+1 567 890 123",
   },
   {
-    position: "Sales & Enquiry",
+    position: "Channel Partner",
     name: "David Wilson",
     number: "+1 678 901 234",
   },
   {
-    position: "Sales & Enquiry",
+    position: "Sales Coordinator",
     name: "Sophia Miller",
     number: "+1 789 012 345",
   }
-]
+];
+
 
 
     const containerVariants = {

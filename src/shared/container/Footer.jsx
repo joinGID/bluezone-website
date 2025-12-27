@@ -34,9 +34,9 @@ function Footer() {
           {/* Team & Value Column */}
           <div className="lg:col-span-8 space-y-12">
             <div>
-              <h3 className="text-habitat/40 text-[10px] md:text-xs tracking-[0.4em] uppercase font-sans font-bold mb-8 italic">
-                Connect with our team
-              </h3>
+             <span className="text-[10px] uppercase tracking-[0.3em] font-sans font-semibold text-habitat/40">
+             Connect with our team
+            </span>
               <FooterLocations theme={theme} />
             </div>
           </div>
@@ -53,7 +53,7 @@ function Footer() {
             <img
               src="/logos/blueZoneLogo1.png"
               alt="Infravision"
-              className="h-8 md:h-10 w-auto object-contain"
+              className="h-12 md:h-20 w-auto object-contain"
             />
           </div>
         </div>
