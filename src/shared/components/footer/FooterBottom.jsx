@@ -7,13 +7,13 @@ const FooterBottom = ({ theme }) => {
 
     return (
         <motion.div
-            className={`flex flex-col md:flex-row  items-center gap-4 w-[50%] ${theme.border}`}
+            className="flex flex-col md:flex-row items-center gap-6 md:gap-10"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
         >
-            <p className={`${theme.textSecondary} text-sm`}>© {currentYear} Blue Zone</p>
+            <p className="text-habitat/60 text-sm font-sans tracking-wide">© {currentYear} Blue Zone Habitat</p>
             <motion.div
                 className="flex gap-6 text-sm"
                 initial={{ opacity: 0 }}

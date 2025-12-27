@@ -3,42 +3,43 @@ import { motion } from "framer-motion";
 
 export default function FooterLocations({ theme }) {
     const locations = [
-        {
-            city: "San Francisco",
-            address: "300 Broadway",
-            details: "San Francisco, CA 94133",
-        },
-        {
-            city: "New York",
-            address: "181 Lafayette St.",
-            details: "New York, NY 10013",
-        },
-        {
-            city: "Austin",
-            address: "800 Congress Ave.",
-            details: "Austin, TX 78701",
-        },
-        {
-            city: "Denver",
-            address: "1200 Lincoln St Ste 8",
-            details: "Denver, CO 80203",
-        },
-        {
-            city: "Lisbon",
-            address: "Av. Alm. Reis 130 1150-016",
-            details: "Lisbon, Portugal",
-        },
-        {
-            city: "Belgrade",
-            address: "Nusiceva 15, 11000",
-            details: "Belgrade, Serbia",
-        },
-    ];
+  {
+    position: "Sales & Enquiry",
+    name: "John Doe",
+    number: "+1 234 567 890",
+  },
+  {
+    position: "Sales & Enquiry",
+    name: "Jane Smith",
+    number: "+1 345 678 901",
+  },
+  {
+    position: "Sales & Enquiry",
+    name: "Michael Brown",
+    number: "+1 456 789 012",
+  },
+  {
+    position: "Sales & Enquiry",
+    name: "Emily Johnson",
+    number: "+1 567 890 123",
+  },
+  {
+    position: "Sales & Enquiry",
+    name: "David Wilson",
+    number: "+1 678 901 234",
+  },
+  {
+    position: "Sales & Enquiry",
+    name: "Sophia Miller",
+    number: "+1 789 012 345",
+  }
+]
+
 
     const containerVariants = {
-        hidden: { opacity: 0 },
+        hidden: { opaposition: 0 },
         visible: {
-            opacity: 1,
+            opaposition: 1,
             transition: {
                 staggerChildren: 0.1,
             },
@@ -46,13 +47,13 @@ export default function FooterLocations({ theme }) {
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0 },
+        hidden: { opaposition: 0, y: 20 },
+        visible: { opaposition: 1, y: 0 },
     };
 
     return (
         <motion.div
-            className="grid grid-cols-2 lg:grid-cols-3 gap-8 mt-12 text-left md:w-[50%]"
+            className="grid grid-cols-2 lg:grid-cols-3 gap-8 mt-12 text-left"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -64,9 +65,9 @@ export default function FooterLocations({ theme }) {
                     className="space-y-1"
                     variants={itemVariants}
                 >
-                    <h4 className={`${theme.heading} font-semibold text-base`}>{location.city}</h4>
-                    <p className={`${theme.textSecondary} underline-slide text-sm font-light font-sans`}>{location.address}</p>
-                    <p className={`${theme.textSecondary} underline-slide text-sm font-light font-sans`}>{location.details}</p>
+                    <h4 className={`${theme.heading} font-semibold text-base`}>{location.position}</h4>
+                    <p className={`${theme.textSecondary} underline-slide text-sm font-light font-sans`}>{location.name}</p><br/>
+                    <p className={`${theme.textSecondary} underline-slide text-sm font-light font-sans`}>{location.number}</p>
                 </motion.div>
             ))}
         </motion.div>

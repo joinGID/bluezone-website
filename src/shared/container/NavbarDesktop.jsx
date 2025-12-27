@@ -101,10 +101,10 @@ export default function Navbar() {
 
            <a
               href="tel:+919946220228"
-              className="flex items-center gap-3 text-sm"
+              className="flex items-center gap-3 text-sm w-[120px]"
             >
               <Phone size={18} />
-              <span>+91 99462 20228</span>
+              <span className="">99462 20228</span>
             </a>
 
             <button

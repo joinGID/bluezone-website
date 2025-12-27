@@ -5,46 +5,30 @@ import { motion } from "framer-motion";
 const FooterBrand = ({ theme }) => {
     return (
         <motion.div
-            className="md:space-y-6 space-y-4 w-[50%] text-left"
+            className="flex flex-col gap-8 text-left"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
         >
-            <motion.h2
-                className={`text-4xl md:text-6xl font-bold font-sans ${theme.heading}`}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-            >
-                Let's Talk
-            </motion.h2>
-            <motion.div
-                className="flex flex-col items-start space-y-2"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-            >
-                <motion.a
-                    href="mailto:hey@BlueZone.global"
-                    className={`underline-slide transition-colors md:text-3xl text-2xl font-light font-sans`}
+            <div className="space-y-4">
+                <span className="text-[10px] uppercase tracking-[0.4em] font-sans font-bold text-habitat/30 block">
+                    Project by 
+                </span>
+                <img
+                    src="/landing/infravision.png"
+                    alt="BlueZone Logo"
+                    className='w-40 md:w-56 brightness-95'
+                />
+            </div>
 
-                >
-                    hey@BlueZone.global
-                </motion.a>
-                <motion.a
-                    href="tel:+14157966262"
-                    className={`underline-slide  transition-colors md:text-3xl text-lg font-light font-sans `}
-
-                >
-                    +1 415 796 6262
-                </motion.a>
-            </motion.div>
+            <div className="pt-6 border-t border-habitat/5">
+                <p className="text-habitat/60 max-w-sm text-sm md:text-base font-light font-serif italic leading-loose tracking-wide">
+                    "Crafting sophisticated living spaces that seamlessly blend modern luxury with the serene rhythms of nature."
+                </p>
+            </div>
         </motion.div>
     );
 };
 
 export default FooterBrand;
-

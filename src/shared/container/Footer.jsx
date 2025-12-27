@@ -9,51 +9,66 @@ import FooterBottom from "../components/footer/FooterBottom.jsx";
 
 function Footer() {
   const theme = {
-    bg: "bg-[#f9f6f3]",
-    text: "text-gray-900",
-    textSecondary: "text-gray-600",
-    heading: "text-gray-900",
-    link: "text-gray-900",
-    linkHover: "hover:text-[#FF3B30]",
-    socialBg: "bg-gray-100",
-    socialHover: "hover:bg-[#FF3B30]",
-    border: "border-gray-200",
+    bg: "bg-[#f7f3ef]", // Using Bone background from brand identity
+    text: "text-habitat",
+    textSecondary: "text-habitat/60",
+    heading: "text-habitat",
+    link: "text-habitat",
+    linkHover: "hover:text-habitat/70",
+    socialBg: "bg-habitat/5",
+    socialHover: "hover:bg-habitat/10",
+    border: "border-habitat/10",
   };
-  return (
-    <footer className={`${theme.bg} ${theme.text}`}>
-      {/* Main Footer Content */}
-      <div className="max-w-8xl md:mx-20 mx-5 md:py-16 py-10">
-        {/* Top Section - Brand and Links */}
-        <div className="flex flex-col lg:flex-row justify-between space-y-10">
-          {/* Left: Brand & Contact */}
-          <FooterBrand theme={theme} />
 
-          {/* Right: Navigation Links */}
-          <div className="flex flex-col gap-12 w-[50%] ">
-            <FooterLinks theme={theme} />
+  return (
+    <footer className={`${theme.bg} ${theme.text} border-t ${theme.border} overflow-hidden`}>
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 lg:py-24">
+
+        {/* TIER 1: BRANDING & TEAM */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 mb-20">
+          {/* Main Brand Column */}
+          <div className="lg:col-span-4 space-y-8">
+            <FooterBrand theme={theme} />
+          </div>
+
+          {/* Team & Value Column */}
+          <div className="lg:col-span-8 space-y-12">
+            <div>
+              <h3 className="text-habitat/40 text-[10px] md:text-xs tracking-[0.4em] uppercase font-sans font-bold mb-8 italic">
+                Connect with our team
+              </h3>
+              <FooterLocations theme={theme} />
+            </div>
           </div>
         </div>
 
-        {/* Locations */}
-        <div className='md:flex md:justify-between'>
-          <div className='hidden md:block'></div>
-          <FooterLocations theme={theme} />
+        {/* TIER 2: NAVIGATION & PROJECT BY STRIP */}
+        <div className="py-10 border-t border-habitat/5 flex flex-col lg:flex-row justify-between items-center gap-10">
+          <FooterLinks theme={theme} />  
+
+          <div className="flex flex-col items-center lg:items-end gap-3 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+            <span className="text-[10px] uppercase tracking-[0.3em] font-sans font-semibold text-habitat/40">
+             Established 2024
+            </span>
+            <img
+              src="/logos/blueZoneLogo1.png"
+              alt="Infravision"
+              className="h-8 md:h-10 w-auto object-contain"
+            />
+          </div>
         </div>
 
-        {/* Social Media Links and Bottom Section */}
-        <div className="mt-12 flex flex-col md:flex-row justify-between gap-5 md:gap-0">
-          <FooterSocial theme={theme} />
+        {/* TIER 3: BOTTOM BAR (LEGAL & SOCIAL) */}
+        <div className="pt-8 border-t border-habitat/10 flex flex-col md:flex-row justify-between items-center gap-8">
           <FooterBottom theme={theme} />
+          <FooterSocial theme={theme} />
         </div>
-
-
 
       </div>
     </footer>
-  )
+  );
 }
 
 export default Footer
-
 
 
