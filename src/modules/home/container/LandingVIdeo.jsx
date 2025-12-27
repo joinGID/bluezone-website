@@ -25,12 +25,12 @@ export default function LandingVideo() {
             {/* Background Video */}
             <video
                 ref={videoRef}
-                src="/landing/landingVideoOne.mp4"
+                src="/landing/landingVIdeo.mp4"
                 autoPlay
                 loop
                 muted={muted}
                 playsInline
-                poster="/gallery/Exterior/exteriorPng/e0.png"
+                poster="/landing/landingVIdeoALt.png"
                 className="w-full md:h-auto h-100 object-cover"
             />
 
