@@ -35,7 +35,7 @@ export default function LandingVideo() {
             />
 
             {/* Light Black Overlay */}
-            <div className="absolute inset-0 bg-black/40 z-10" />
+            <div className="absolute inset-0 bg-black/30 z-10" />
 
             {/* Blue zone-style Overlay Text */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none px-4 text-white z-20">

@@ -12,7 +12,7 @@ const ContactLeft = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="bg-[#faf6f1] px-4 py-16 sm:py-20"
+      className="bg-[#f7f3ef] px-4 py-16 sm:py-20"
     >
       <div className=" p-12 mx-auto">
         {/*remove centering & make content start from left */}

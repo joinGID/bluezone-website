@@ -1,33 +1,33 @@
 // abouts/constants/contactDetails.jsx
 
 export const contactDetails = {
-  hotelName: "Blue zone Homes & Living",
-  addressLabel: "Location",
-  address: "21400 Pacific Sunset Blvd, Malibu, CA 90265",
-  phoneLabel: "Phone",
+  hotelName: "Blue Zone Habitat",
+  addressLabel: "Project Location",
+  address: "Manjeri, Malappuram, Kerala, India",
+  phoneLabel: "Contact Numbers",
   phones: [
     {
-      label: "Reservations & Inquiries",
-      number: "(310) 555-2140",
+      label: "Sales & Enquiry",
+      number: "+91 99462 20228",
     },
     {
-      label: "Concierge & Guest Services",
-      number: "(310) 555-2199",
+      label: "Customer Relations",
+      number: "+91 98471 23456",
+    },
+    {
+      label: "Project Head",
+      number: "+91 94460 55667",
     },
   ],
-  emailLabel: "Email",
+  emailLabel: "Email Addresses",
   emails: [
     {
-      label: "General Info",
-      address: "hello@Blue zonecoastal.com",
+      label: "General Inquiry",
+      address: "contact@bluezonehabitat.com",
     },
     {
-      label: "Bookings",
-      address: "stay@Blue zonecoastal.com",
-    },
-    {
-      label: "Events",
-      address: "events@Blue zonecoastal.com",
+      label: "Project Support",
+      address: "support@bluezonehabitat.com",
     },
   ],
 };

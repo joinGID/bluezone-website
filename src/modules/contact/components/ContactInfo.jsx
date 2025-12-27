@@ -4,10 +4,10 @@ const ContactInfo = ({ details }) => {
   return (
     <div className="w-full flex justify-start  ">
 
-      <div className="space-y-12 text-left max-w-xl pl-4">  
+      <div className="space-y-12 text-left max-w-xl pl-4">
 
         {/* Heading */}
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight text-[#16333a]">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-medium leading-tight text-habitat">
           {details.hotelName}
         </h2>
 
