@@ -70,7 +70,7 @@ function WelcomeText() {
         width={190}
         height={190}
       /> */}
-      <img src="/landing/sign.png" alt="Signature" className=" w-[160px] h-[100px] mx-auto -mt-2 rotate-20" width={190} height={190} />
+      <img src="/landing/sign.png" alt="Signature" className="w-[120px] h-[60px] md:w-[160px] md:h-[100px] mx-auto -mt-2 rotate-20" width={190} height={190} />
 
       {/* Name */}
       <div>

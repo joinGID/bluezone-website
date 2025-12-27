@@ -31,7 +31,7 @@ export default function LandingVideo() {
                 muted={muted}
                 playsInline
                 poster="/gallery/Exterior/exteriorPng/e0.png"
-                className="w-full h-auto object-cover"
+                className="w-full md:h-auto h-100 object-cover"
             />
 
             {/* Blue zone-style Overlay Text */}
