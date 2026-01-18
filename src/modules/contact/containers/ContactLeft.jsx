@@ -14,7 +14,7 @@ const ContactLeft = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="bg-[#f7f3ef] px-4 py-16 sm:py-20"
     >
-      <div className=" p-12 mx-auto">
+      <div className="hidden 2xl:block p-12 mx-auto">
         {/*remove centering & make content start from left */}
         <ContactInfo details={contactDetails} />
 

@@ -31,9 +31,9 @@ const ServiceHeading = () => {
         </div>
 
         {/* RIGHT: outline button - aligned to bottom-right on desktop, left on mobile */}
-        <div  className="flex-shrink-0 pb-2">
+        {/* <div  className="flex-shrink-0 pb-2">
           <OutlineButton onClick={()=>router.push('/contact')} label={buttonLabel} className="hover:bg-black hover:text-white transition-colors duration-300" />
-        </div>
+        </div> */}
       </div>
     </section>
   );

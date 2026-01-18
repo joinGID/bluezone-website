@@ -5,8 +5,8 @@ import { Icon } from "@iconify/react";
 
 export default function FooterSocial({ theme }) {
     const socialLinks = [
-        { name: "Instagram", icon: "mdi:instagram", href: "https://instagram.com" },
-        { name: "Facebook", icon: "mdi:facebook", href: "https://facebook.com" },
+        { name: "Instagram", icon: "mdi:instagram", href: "https://www.instagram.com/mission___malappuram2050/#" },
+        { name: "Facebook", icon: "mdi:facebook", href: "https://www.facebook.com/me/" },
         { name: "YouTube", icon: "mdi:youtube", href: "https://youtube.com" },
         { name: "LinkedIn", icon: "mdi:linkedin", href: "https://linkedin.com" },
     ];
