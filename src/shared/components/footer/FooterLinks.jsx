@@ -13,7 +13,7 @@ const FooterLinks = ({ theme }) => {
             links: [
                 { label: "About" },
                 { label: "Services" },
-                { label: "Rooms" },
+                // { label: "Rooms" },
                 { label: "Gallery" },
                 { label: "Contact" },
             ],

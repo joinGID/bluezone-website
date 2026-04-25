@@ -4,7 +4,7 @@ export default function sitemap() {
   const baseUrl = "https://bluezonehabitat.com";
 
   // Static routes
-  const routes = ["", "/gallery", "/rooms"].map((route) => ({
+  const routes = ["", "/gallery", "/rooms", "/contact"].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "monthly",

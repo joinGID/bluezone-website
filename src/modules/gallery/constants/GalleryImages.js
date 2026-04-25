@@ -7,7 +7,7 @@ export const GalleryByType = {
       png: "/gallery/Interior/interiorPng/i1.png",
       webp: "/gallery/Interior/interiorWebp/i1.webp",
     },
-   {
+    {
       type: "image",
       avif: "/gallery/Interior/interiorAvif/i2.avif",
       png: "/gallery/Interior/interiorPng/i2.png",
@@ -73,15 +73,14 @@ export const GalleryByType = {
       png: "/gallery/Interior/interiorPng/i12.png",
       webp: "/gallery/Interior/interiorWebp/i12.webp",
     },
-    {
-      type: "video",
-      src: "/gallery/Interior/interiorVideo/i13.mp4",
-    },
-    {
-      type: "video",
-      src: "/gallery/Interior/interiorVideo/i14.mp4",
-    },
-    
+    // {
+    //   type: "video",
+    //   src: "/gallery/Interior/interiorVideo/i13.mp4",
+    // },
+    // {
+    //   type: "video",
+    //   src: "/gallery/Interior/interiorVideo/i14.mp4",
+    // },
   ],
 
   exterior: [
@@ -156,12 +155,42 @@ export const GalleryByType = {
       avif: "/gallery/Exterior/exteriorAvif/e11.avif",
       png: "/gallery/Exterior/exteriorPng/e11.png",
       webp: "/gallery/Exterior/exteriorWebp/e11.webp",
-    }
+    },
   ],
-    
-
 
   additions: [
+    //office
+    {
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777104855/doiywe0civejl5qp629d_wk3r0b.webp",
+    },
+    {
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777104853/a5poxjojbtjsennov1je_epr87m.webp"
+    },
+    // reception
+
+    {
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777103636/IMG-20251225-WA0046_qqrhs5.webp",
+    },
+
+    //terrace lounge
+    {
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777103634/mhr8nsbqvvvl10fboyd6_njcbcy.webp",
+    },
+    {
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777103633/v2dj0t3qrbmcb2x4u0vu_d2pxwb.webp",
+    },
+    //maid room
+    {
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777103672/wayanad_workers_room-Unnamed-20251227-171618_yrsznv.webp",
+    },
+
+    // own public
     {
       type: "image",
       avif: "/gallery/additionals/additionalsAvif/a4.avif",
@@ -228,17 +257,67 @@ export const GalleryByType = {
       png: "/gallery/additionals/additionalsPng/a14.png",
       webp: "/gallery/additionals/additionalsWebp/a14.webp",
     },
+    // {
+    //   type: "video",
+    //   src: "/gallery/additionals/additionalVideo/a1.mp4",
+    // },
+    // {
+    //   type: "video",
+    //   src: "/gallery/additionals/additionalVideo/a2.mp4",
+    // },
+    // {
+    //   type: "video",
+    //   src: "/gallery/additionals/additionalVideo/a3.mp4",
+    // },
+  ],
+  clubhouse: [
+    // gym
     {
-      type: "video",
-      src: "/gallery/additionals/additionalVideo/a1.mp4",
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777102397/tb6vrlztdnqyca3b4yag_dcr6mr.webp",
     },
     {
-      type:"video",
-      src:"/gallery/additionals/additionalVideo/a2.mp4",
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777102397/uvkh0uvwluqd1gufpxu5_ql9plx.webp",
+    },
+    {
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777102395/jasjyyq55kzzekbyj01h_vpvu8j.webp",
+    },
+    {
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777102392/i1ztlz0jyy4lxfjjcprl_lwmyfd.webp",
+    },
+    {
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777102392/wme4b4h6cc2itkfq5wnq_gp13my.webp",
+    },
+    {
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777102388/pwjenxiyv4t4yqdwcsko_inr9py.webp",
+    },
+    // gaming
+    {
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777101811/gaming_room_n1ri4c.webp",
+    },
+    {
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777101811/Scene_1.png_new_1_l3zcbc.webp",
     },
     {
       type: "video",
-      src: "/gallery/additionals/additionalVideo/a3.mp4",
+      src: "https://res.cloudinary.com/dha82l6bt/video/upload/v1777102256/Clip_1_4_hsp7mq.mp4",
+    },
+    {
+      type: "video",
+      src: "https://res.cloudinary.com/dha82l6bt/video/upload/v1777102234/game_tz9qmh.mp4",
+    },
+
+    //pool
+    {
+      type: "image",
+      webp: "https://res.cloudinary.com/dha82l6bt/image/upload/v1777103638/Scene_1_2_style_transfer01_nj067g.webp",
     },
   ],
 };

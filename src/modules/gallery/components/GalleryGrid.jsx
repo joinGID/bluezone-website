@@ -7,6 +7,7 @@ import { X } from "lucide-react";
 const FILTERS = [
   { key: "interior", label: "Interior" },
   { key: "exterior", label: "Exterior" },
+  { key: "clubhouse", label: "Clubhouse" },
   { key: "additions", label: "Additions" },
 ];
 

@@ -25,21 +25,8 @@ function Footer() {
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 lg:py-24">
 
         {/* TIER 1: BRANDING & TEAM */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 mb-20">
-          {/* Main Brand Column */}
-          <div className="lg:col-span-4 space-y-8">
-            <FooterBrand theme={theme} />
-          </div>
-
-          {/* Team & Value Column */}
-          <div className="lg:col-span-8 space-y-12">
-            <div>
-             <span className="text-[10px] uppercase tracking-[0.3em] font-sans font-semibold text-habitat/40">
-             Connect with our team
-            </span>
-              <FooterLocations theme={theme} />
-            </div>
-          </div>
+        <div className="mb-20">
+          <FooterBrand theme={theme} />
         </div>
 
         {/* TIER 2: NAVIGATION & PROJECT BY STRIP */}
