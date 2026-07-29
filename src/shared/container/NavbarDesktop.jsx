@@ -100,11 +100,11 @@ export default function Navbar() {
 
 
            <a
-              href="tel:+919946220228"
+              href="tel:+917356523534"
               className="flex items-center gap-3 text-sm w-[120px]"
             >
               <Phone size={18} />
-              <span className="">99462 20228</span>
+              <span className="">73565 23534</span>
             </a>
 
             <button

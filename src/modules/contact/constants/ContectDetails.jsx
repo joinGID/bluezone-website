@@ -8,15 +8,15 @@ export const contactDetails = {
   phones: [
     {
       label: "Sales & Enquiry",
-      number: "+91 99462 20228",
+      number: "+91 73565 23534",
     },
     {
       label: "Customer Relations",
-      number: "+91 98471 23456",
+      number: "+91 73565 23534",
     },
     {
       label: "Project Head",
-      number: "+91 94460 55667",
+      number: "+91 73565 23534",
     },
   ],
   emailLabel: "Email Addresses",
