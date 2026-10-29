@@ -25,7 +25,7 @@ export default function LandingVideo() {
             {/* Background Video */}
             <video
                 ref={videoRef}
-                src="/landing/landingVIdeo.mp4"
+                src="/landing/landingVIdeo1.mp4"
                 autoPlay
                 loop
                 muted={muted}
