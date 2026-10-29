@@ -75,7 +75,7 @@ function WelcomeText() {
       {/* Name */}
       <div>
         <p className="text-xl font-serif text-habitat mt-2">
-           DR SAHID CHOLAYIL
+           DR . SAHID CHOLAYIL
         </p>
         <p className="md:text-sm text-xs text-aero">
           Chairman

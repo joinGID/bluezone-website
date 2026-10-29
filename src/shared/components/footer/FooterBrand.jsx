@@ -43,7 +43,7 @@ const FooterBrand = ({ theme }) => {
             Ahmed Amal
           </h4>
           <p className={`${theme.textSecondary} text-sm`}>
-            Sales Manager
+            Project Head
           </p>
         </div>
 

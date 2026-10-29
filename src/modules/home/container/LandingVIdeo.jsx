@@ -40,11 +40,6 @@ export default function LandingVideo() {
             {/* Blue zone-style Overlay Text */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none px-4 text-white z-20">
                 <div className="flex flex-col items-center gap-6 max-w-5xl">
-                    <h2
-                        className="text-sm md:text-lg uppercase tracking-[0.2em] font-light mb-8"
-                    >
-                        EVOLURA
-                    </h2>
                     <h1 className="text-4xl md:text-7xl font-serif font-medium leading-tight drop-shadow-2xl">
                         THE HEART OF <br /> COMMUNITY LIFE
                     </h1>
@@ -54,7 +49,7 @@ export default function LandingVideo() {
                     </p>
                     <div className="mt-6 py-3 px-8 border border-white/30 rounded-full backdrop-blur-sm bg-white/5 drop-shadow-lg">
                         <p className="text-xs md:text-sm tracking-[0.2em] uppercase font-medium">
-                            “ Second Largest Clubhouse in Kerala ”
+                            “ Largest Clubhouse in Kerala ”
                         </p>
                     </div>
                 </div>
